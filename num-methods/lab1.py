@@ -56,7 +56,7 @@ def aitken_scheme(x, y, x0, eps):
         if abs(buffer[i+1][0]-buffer[i-1][0]) < min_eps:
             min_eps = abs(buffer[i+1][0]-buffer[i-1][0])
             min_ind = i
-    return buffer[i+1][0]
+    return buffer[min_ind+1][0]
 
 def main():
     x = [1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0]
