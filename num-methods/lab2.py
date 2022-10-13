@@ -3,6 +3,9 @@ class Function:
         self.x = x
         self.y = y
 
+    def __str__(self) -> str:
+        pass
+
     def get_finite_difference(self):
         pass
 
@@ -11,3 +14,9 @@ class Function:
 
     def get_gauss_polynomial(self, x0:float) -> float:
         pass
+
+def main() -> None:
+    pass
+
+if __name__ == "__main__":
+    main()
